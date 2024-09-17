@@ -62,7 +62,7 @@
             lblCarregando.TabIndex = 5;
             lblCarregando.Text = "Carregando.";
             // 
-            // Form1
+            // fmrTelaSplash
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -70,8 +70,10 @@
             Controls.Add(lblCarregando);
             Controls.Add(progressBar1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Name = "Form1";
+            Name = "fmrTelaSplash";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora 3001";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
