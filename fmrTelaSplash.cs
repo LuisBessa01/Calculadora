@@ -28,7 +28,9 @@ namespace Calculadora
             if (pgbCarregando.Value == pgbCarregando.Maximum)
             {
                 tmrCarregando02.Enabled= false;
-                this.Hide();
+                Hide();
+                FmrMenu formularioMenu = new FmrMenu();
+                formularioMenu.ShowDialog();
             }
         }
 
