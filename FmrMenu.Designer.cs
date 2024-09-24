@@ -55,8 +55,9 @@
             txtVisor.Location = new Point(42, 31);
             txtVisor.Multiline = true;
             txtVisor.Name = "txtVisor";
-            txtVisor.Size = new Size(410, 61);
+            txtVisor.Size = new Size(410, 93);
             txtVisor.TabIndex = 0;
+            txtVisor.TextAlign = HorizontalAlignment.Right;
             // 
             // button1
             // 
