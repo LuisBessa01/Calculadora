@@ -34,8 +34,6 @@
             pgbCarregando = new ProgressBar();
             lblCarregando = new Label();
             tmrCarregando = new System.Windows.Forms.Timer(components);
-            tmrMudarCarregamento = new System.Windows.Forms.Timer(components);
-            tmrCarregando02 = new System.Windows.Forms.Timer(components);
             tmrTresPontos = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -43,27 +41,29 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.be_patient_waiting;
-            pictureBox1.Location = new Point(264, 204);
+            pictureBox1.Location = new Point(302, 272);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(277, 218);
+            pictureBox1.Size = new Size(317, 291);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
             // pgbCarregando
             // 
-            pgbCarregando.Location = new Point(173, 159);
+            pgbCarregando.Location = new Point(198, 212);
+            pgbCarregando.Margin = new Padding(3, 4, 3, 4);
             pgbCarregando.Name = "pgbCarregando";
-            pgbCarregando.Size = new Size(470, 23);
+            pgbCarregando.Size = new Size(537, 31);
             pgbCarregando.TabIndex = 4;
             // 
             // lblCarregando
             // 
             lblCarregando.AutoSize = true;
             lblCarregando.Font = new Font("Comic Sans MS", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblCarregando.Location = new Point(200, 48);
+            lblCarregando.Location = new Point(229, 64);
             lblCarregando.Name = "lblCarregando";
-            lblCarregando.Size = new Size(416, 90);
+            lblCarregando.Size = new Size(513, 111);
             lblCarregando.TabIndex = 5;
             lblCarregando.Text = "Carregando.";
             // 
@@ -71,17 +71,6 @@
             // 
             tmrCarregando.Enabled = true;
             tmrCarregando.Tick += tmrCarregando_Tick;
-            // 
-            // tmrMudarCarregamento
-            // 
-            tmrMudarCarregamento.Enabled = true;
-            tmrMudarCarregamento.Interval = 2800;
-            tmrMudarCarregamento.Tick += tmrDescarregando_Tick;
-            // 
-            // tmrCarregando02
-            // 
-            tmrCarregando02.Interval = 1500;
-            tmrCarregando02.Tick += tmrDescarregando_Tick_1;
             // 
             // tmrTresPontos
             // 
@@ -91,14 +80,15 @@
             // 
             // fmrTelaSplash
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(lblCarregando);
             Controls.Add(pgbCarregando);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 4, 3, 4);
             Name = "fmrTelaSplash";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora 3001";
@@ -114,8 +104,6 @@
         private ProgressBar pgbCarregando;
         private Label lblCarregando;
         private System.Windows.Forms.Timer tmrCarregando;
-        private System.Windows.Forms.Timer tmrMudarCarregamento;
-        private System.Windows.Forms.Timer tmrCarregando02;
         private System.Windows.Forms.Timer tmrTresPontos;
     }
 }
