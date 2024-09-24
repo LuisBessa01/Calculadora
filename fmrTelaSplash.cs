@@ -12,28 +12,28 @@ namespace Calculadora
 
         private void tmrCarregando_Tick(object sender, EventArgs e)
         {
-            pgbCarregando.Value += 2;
-        }
-
-        private void tmrDescarregando_Tick(object sender, EventArgs e)
-        {
-            tmrCarregando02.Start();
-            tmrCarregando.Stop();
-            tmrMudarCarregamento.Stop();
-        }
-
-        private void tmrDescarregando_Tick_1(object sender, EventArgs e)
-        {
-            pgbCarregando.Value += 10;
-            if (pgbCarregando.Value == pgbCarregando.Maximum)
+            if (pgbCarregando.Value < 40)
             {
-                tmrCarregando02.Enabled= false;
-                Hide();
-                FmrMenu formularioMenu = new FmrMenu();
-                formularioMenu.ShowDialog();
+                pgbCarregando.Value += 2;
+            }
+            else
+            {
+                tmrCarregando.Interval = 500;
+                if (pgbCarregando.Value == 100)
+                {
+                    tmrCarregando.Stop();
+                    this.Hide();
+                    FmrMenu formularioMenu = new FmrMenu();
+                    formularioMenu.ShowDialog();
+                }
+                else
+                {
+                    pgbCarregando.Value += 10;
+                }
             }
         }
 
+       
         private void tmrTresPontos_Tick(object sender, EventArgs e)
         {
 
