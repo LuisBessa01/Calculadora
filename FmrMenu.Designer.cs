@@ -48,8 +48,10 @@
             btn0 = new Button();
             menuStrip1 = new MenuStrip();
             conversorToolStripMenuItem = new ToolStripMenuItem();
-            celsiusToolStripMenuItem = new ToolStripMenuItem();
-            centímetrosPolegadasToolStripMenuItem = new ToolStripMenuItem();
+            mspConversorTemperatura = new ToolStripMenuItem();
+            mspConversorDistancia = new ToolStripMenuItem();
+            arquivoToolStripMenuItem = new ToolStripMenuItem();
+            mspSair = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -235,7 +237,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { conversorToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { conversorToolStripMenuItem, arquivoToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(509, 24);
@@ -244,23 +246,38 @@
             // 
             // conversorToolStripMenuItem
             // 
-            conversorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { celsiusToolStripMenuItem, centímetrosPolegadasToolStripMenuItem });
+            conversorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mspConversorTemperatura, mspConversorDistancia });
             conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
             conversorToolStripMenuItem.Size = new Size(73, 20);
             conversorToolStripMenuItem.Text = "Conversor";
             // 
-            // celsiusToolStripMenuItem
+            // mspConversorTemperatura
             // 
-            celsiusToolStripMenuItem.Name = "celsiusToolStripMenuItem";
-            celsiusToolStripMenuItem.Size = new Size(212, 22);
-            celsiusToolStripMenuItem.Text = "Celsius -> Fahrenheit";
-            celsiusToolStripMenuItem.Click += celsiusToolStripMenuItem_Click;
+            mspConversorTemperatura.Name = "mspConversorTemperatura";
+            mspConversorTemperatura.Size = new Size(212, 22);
+            mspConversorTemperatura.Text = "Celsius -> Fahrenheit";
+            mspConversorTemperatura.Click += celsiusToolStripMenuItem_Click;
             // 
-            // centímetrosPolegadasToolStripMenuItem
+            // mspConversorDistancia
             // 
-            centímetrosPolegadasToolStripMenuItem.Name = "centímetrosPolegadasToolStripMenuItem";
-            centímetrosPolegadasToolStripMenuItem.Size = new Size(212, 22);
-            centímetrosPolegadasToolStripMenuItem.Text = "Centímetros -> Polegadas";
+            mspConversorDistancia.Name = "mspConversorDistancia";
+            mspConversorDistancia.Size = new Size(212, 22);
+            mspConversorDistancia.Text = "Centímetros -> Polegadas";
+            mspConversorDistancia.Click += mspConversorDistancia_Click;
+            // 
+            // arquivoToolStripMenuItem
+            // 
+            arquivoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mspSair });
+            arquivoToolStripMenuItem.Name = "arquivoToolStripMenuItem";
+            arquivoToolStripMenuItem.Size = new Size(61, 20);
+            arquivoToolStripMenuItem.Text = "Arquivo";
+            // 
+            // mspSair
+            // 
+            mspSair.Name = "mspSair";
+            mspSair.Size = new Size(180, 22);
+            mspSair.Text = "Sair";
+            mspSair.Click += mspSair_Click;
             // 
             // FmrCalculadora
             // 
@@ -321,7 +338,9 @@
         private Button btn0;
         private MenuStrip menuStrip1;
         private ToolStripMenuItem conversorToolStripMenuItem;
-        private ToolStripMenuItem celsiusToolStripMenuItem;
-        private ToolStripMenuItem centímetrosPolegadasToolStripMenuItem;
+        private ToolStripMenuItem mspConversorTemperatura;
+        private ToolStripMenuItem mspConversorDistancia;
+        private ToolStripMenuItem arquivoToolStripMenuItem;
+        private ToolStripMenuItem mspSair;
     }
 }

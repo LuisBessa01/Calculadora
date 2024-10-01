@@ -108,7 +108,7 @@
             // 
             // btnVoltar
             // 
-            btnVoltar.Location = new Point(20, 19);
+            btnVoltar.Location = new Point(12, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(75, 23);
             btnVoltar.TabIndex = 7;
