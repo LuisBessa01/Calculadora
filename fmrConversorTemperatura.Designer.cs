@@ -34,6 +34,7 @@
             label1 = new Label();
             label2 = new Label();
             btnLimpar = new Button();
+            btnVoltar = new Button();
             SuspendLayout();
             // 
             // txtGrausFahrenheit
@@ -42,6 +43,7 @@
             txtGrausFahrenheit.Location = new Point(12, 223);
             txtGrausFahrenheit.Multiline = true;
             txtGrausFahrenheit.Name = "txtGrausFahrenheit";
+            txtGrausFahrenheit.ReadOnly = true;
             txtGrausFahrenheit.Size = new Size(364, 48);
             txtGrausFahrenheit.TabIndex = 1;
             // 
@@ -55,6 +57,7 @@
             btnCalculo.TabIndex = 2;
             btnCalculo.Text = "Converter";
             btnCalculo.UseVisualStyleBackColor = false;
+            btnCalculo.Click += btnCalculo_Click;
             // 
             // txtGrausCelsius
             // 
@@ -101,6 +104,17 @@
             btnLimpar.TabIndex = 6;
             btnLimpar.Text = "Limpar";
             btnLimpar.UseVisualStyleBackColor = false;
+            btnLimpar.Click += btnLimpar_Click;
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(20, 19);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(75, 23);
+            btnVoltar.TabIndex = 7;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // fmrConversorTemperatura
             // 
@@ -108,6 +122,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightBlue;
             ClientSize = new Size(388, 450);
+            Controls.Add(btnVoltar);
             Controls.Add(btnLimpar);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -130,5 +145,6 @@
         private Label label1;
         private Label label2;
         private Button btnLimpar;
+        private Button btnVoltar;
     }
 }

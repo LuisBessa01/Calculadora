@@ -92,6 +92,7 @@
             btnCalculo.TabIndex = 8;
             btnCalculo.Text = "Converter";
             btnCalculo.UseVisualStyleBackColor = false;
+            btnCalculo.Click += btnCalculo_Click;
             // 
             // txtPolegadas
             // 
@@ -99,6 +100,7 @@
             txtPolegadas.Location = new Point(24, 216);
             txtPolegadas.Multiline = true;
             txtPolegadas.Name = "txtPolegadas";
+            txtPolegadas.ReadOnly = true;
             txtPolegadas.Size = new Size(364, 48);
             txtPolegadas.TabIndex = 7;
             // 
