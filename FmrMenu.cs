@@ -140,5 +140,18 @@ namespace Calculadora
         {
             Application.Exit();
         }
+
+        private void mspSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void mspConversorDistancia_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            fmrConversorDistancia formularioDistancia = new fmrConversorDistancia();
+            formularioDistancia.ShowDialog();
+        }
     }
 }
+

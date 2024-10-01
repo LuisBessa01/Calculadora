@@ -34,6 +34,7 @@
             txtCentimetros = new TextBox();
             btnCalculo = new Button();
             txtPolegadas = new TextBox();
+            btnVoltar = new Button();
             SuspendLayout();
             // 
             // btnLimpar
@@ -46,6 +47,7 @@
             btnLimpar.TabIndex = 12;
             btnLimpar.Text = "Limpar";
             btnLimpar.UseVisualStyleBackColor = false;
+            btnLimpar.Click += btnLimpar_Click;
             // 
             // label2
             // 
@@ -104,12 +106,23 @@
             txtPolegadas.Size = new Size(364, 48);
             txtPolegadas.TabIndex = 7;
             // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(24, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(75, 23);
+            btnVoltar.TabIndex = 13;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // fmrConversorDistancia
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightBlue;
             ClientSize = new Size(411, 457);
+            Controls.Add(btnVoltar);
             Controls.Add(btnLimpar);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -130,5 +143,6 @@
         private TextBox txtCentimetros;
         private Button btnCalculo;
         private TextBox txtPolegadas;
+        private Button btnVoltar;
     }
 }
