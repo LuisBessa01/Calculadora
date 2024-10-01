@@ -23,7 +23,7 @@ namespace Calculadora
                 {
                     tmrCarregando.Stop();
                     this.Hide();
-                    FmrMenu formularioMenu = new FmrMenu();
+                    FmrCalculadora formularioMenu = new FmrCalculadora();
                     formularioMenu.ShowDialog();
                 }
                 else
