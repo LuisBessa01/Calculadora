@@ -131,7 +131,14 @@ namespace Calculadora
 
         private void celsiusToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            fmrConversorTemperatura formularioTemperatura = new fmrConversorTemperatura();
+            formularioTemperatura.ShowDialog();
+        }
 
+        private void FmrCalculadora_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

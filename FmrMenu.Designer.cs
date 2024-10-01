@@ -291,6 +291,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "FmrCalculadora";
             Text = "Calculadora";
+            FormClosed += FmrCalculadora_FormClosed;
             Load += FmrMenu_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
