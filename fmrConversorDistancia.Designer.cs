@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmrConversorDistancia));
             btnLimpar = new Button();
             label2 = new Label();
             label1 = new Label();
@@ -129,7 +130,9 @@
             Controls.Add(txtCentimetros);
             Controls.Add(btnCalculo);
             Controls.Add(txtPolegadas);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "fmrConversorDistancia";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Conversor cm -> in″";
             ResumeLayout(false);
             PerformLayout();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FmrCalculadora));
             txtVisor = new TextBox();
             btnSoma = new Button();
             btnSubtracao = new Button();
@@ -275,7 +276,7 @@
             // mspSair
             // 
             mspSair.Name = "mspSair";
-            mspSair.Size = new Size(180, 22);
+            mspSair.Size = new Size(93, 22);
             mspSair.Text = "Sair";
             mspSair.Click += mspSair_Click;
             // 
@@ -304,9 +305,11 @@
             Controls.Add(txtVisor);
             Controls.Add(menuStrip1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 4, 3, 4);
             Name = "FmrCalculadora";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Calculadora";
             FormClosed += FmrCalculadora_FormClosed;
             Load += FmrMenu_Load;

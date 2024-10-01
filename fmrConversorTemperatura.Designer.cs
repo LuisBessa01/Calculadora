@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmrConversorTemperatura));
             txtGrausFahrenheit = new TextBox();
             btnCalculo = new Button();
             txtGrausCelsius = new TextBox();
@@ -129,7 +130,9 @@
             Controls.Add(txtGrausCelsius);
             Controls.Add(btnCalculo);
             Controls.Add(txtGrausFahrenheit);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "fmrConversorTemperatura";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Conversor °C -> F";
             Load += fmrConversorTemperatura_Load;
             ResumeLayout(false);
