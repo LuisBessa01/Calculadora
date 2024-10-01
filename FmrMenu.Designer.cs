@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class FmrMenu
+    partial class FmrCalculadora
     {
         /// <summary>
         /// Required designer variable.
@@ -46,13 +46,18 @@
             btn1 = new Button();
             btn3 = new Button();
             btn0 = new Button();
+            menuStrip1 = new MenuStrip();
+            conversorToolStripMenuItem = new ToolStripMenuItem();
+            celsiusToolStripMenuItem = new ToolStripMenuItem();
+            centímetrosPolegadasToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // txtVisor
             // 
             txtVisor.Enabled = false;
             txtVisor.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtVisor.Location = new Point(42, 31);
+            txtVisor.Location = new Point(41, 72);
             txtVisor.Multiline = true;
             txtVisor.Name = "txtVisor";
             txtVisor.Size = new Size(410, 93);
@@ -61,7 +66,7 @@
             // 
             // btnSoma
             // 
-            btnSoma.Location = new Point(42, 130);
+            btnSoma.Location = new Point(41, 171);
             btnSoma.Name = "btnSoma";
             btnSoma.Size = new Size(80, 80);
             btnSoma.TabIndex = 1;
@@ -71,7 +76,7 @@
             // 
             // btnSubtracao
             // 
-            btnSubtracao.Location = new Point(150, 130);
+            btnSubtracao.Location = new Point(149, 171);
             btnSubtracao.Name = "btnSubtracao";
             btnSubtracao.Size = new Size(80, 80);
             btnSubtracao.TabIndex = 2;
@@ -81,7 +86,7 @@
             // 
             // btnMulti
             // 
-            btnMulti.Location = new Point(258, 130);
+            btnMulti.Location = new Point(257, 171);
             btnMulti.Name = "btnMulti";
             btnMulti.Size = new Size(80, 80);
             btnMulti.TabIndex = 3;
@@ -91,7 +96,7 @@
             // 
             // btnDivisao
             // 
-            btnDivisao.Location = new Point(372, 130);
+            btnDivisao.Location = new Point(371, 171);
             btnDivisao.Name = "btnDivisao";
             btnDivisao.Size = new Size(80, 80);
             btnDivisao.TabIndex = 4;
@@ -101,7 +106,7 @@
             // 
             // btnLimpar
             // 
-            btnLimpar.Location = new Point(372, 228);
+            btnLimpar.Location = new Point(371, 269);
             btnLimpar.Name = "btnLimpar";
             btnLimpar.Size = new Size(80, 80);
             btnLimpar.TabIndex = 8;
@@ -111,7 +116,7 @@
             // 
             // btn9
             // 
-            btn9.Location = new Point(258, 228);
+            btn9.Location = new Point(257, 269);
             btn9.Name = "btn9";
             btn9.Size = new Size(80, 80);
             btn9.TabIndex = 7;
@@ -121,7 +126,7 @@
             // 
             // btn8
             // 
-            btn8.Location = new Point(150, 228);
+            btn8.Location = new Point(149, 269);
             btn8.Name = "btn8";
             btn8.Size = new Size(80, 80);
             btn8.TabIndex = 6;
@@ -131,7 +136,7 @@
             // 
             // btn7
             // 
-            btn7.Location = new Point(42, 228);
+            btn7.Location = new Point(41, 269);
             btn7.Name = "btn7";
             btn7.Size = new Size(80, 80);
             btn7.TabIndex = 5;
@@ -141,7 +146,7 @@
             // 
             // button9
             // 
-            button9.Location = new Point(372, 337);
+            button9.Location = new Point(371, 378);
             button9.Name = "button9";
             button9.Size = new Size(80, 80);
             button9.TabIndex = 12;
@@ -150,7 +155,7 @@
             // 
             // btn6
             // 
-            btn6.Location = new Point(258, 337);
+            btn6.Location = new Point(257, 378);
             btn6.Name = "btn6";
             btn6.Size = new Size(80, 80);
             btn6.TabIndex = 11;
@@ -160,7 +165,7 @@
             // 
             // btn5
             // 
-            btn5.Location = new Point(150, 337);
+            btn5.Location = new Point(149, 378);
             btn5.Name = "btn5";
             btn5.Size = new Size(80, 80);
             btn5.TabIndex = 10;
@@ -170,7 +175,7 @@
             // 
             // btn4
             // 
-            btn4.Location = new Point(42, 337);
+            btn4.Location = new Point(41, 378);
             btn4.Name = "btn4";
             btn4.Size = new Size(80, 80);
             btn4.TabIndex = 9;
@@ -180,7 +185,7 @@
             // 
             // btnIgual
             // 
-            btnIgual.Location = new Point(372, 437);
+            btnIgual.Location = new Point(371, 478);
             btnIgual.Name = "btnIgual";
             btnIgual.Size = new Size(80, 181);
             btnIgual.TabIndex = 16;
@@ -190,7 +195,7 @@
             // 
             // btn2
             // 
-            btn2.Location = new Point(150, 437);
+            btn2.Location = new Point(149, 478);
             btn2.Name = "btn2";
             btn2.Size = new Size(80, 80);
             btn2.TabIndex = 14;
@@ -200,7 +205,7 @@
             // 
             // btn1
             // 
-            btn1.Location = new Point(42, 437);
+            btn1.Location = new Point(41, 478);
             btn1.Name = "btn1";
             btn1.Size = new Size(80, 80);
             btn1.TabIndex = 13;
@@ -210,7 +215,7 @@
             // 
             // btn3
             // 
-            btn3.Location = new Point(258, 437);
+            btn3.Location = new Point(257, 478);
             btn3.Name = "btn3";
             btn3.Size = new Size(80, 80);
             btn3.TabIndex = 15;
@@ -220,7 +225,7 @@
             // 
             // btn0
             // 
-            btn0.Location = new Point(42, 538);
+            btn0.Location = new Point(41, 579);
             btn0.Name = "btn0";
             btn0.Size = new Size(296, 80);
             btn0.TabIndex = 17;
@@ -228,11 +233,40 @@
             btn0.UseVisualStyleBackColor = true;
             btn0.Click += btn0_Click;
             // 
-            // FmrMenu
+            // menuStrip1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { conversorToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(509, 24);
+            menuStrip1.TabIndex = 18;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // conversorToolStripMenuItem
+            // 
+            conversorToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { celsiusToolStripMenuItem, centímetrosPolegadasToolStripMenuItem });
+            conversorToolStripMenuItem.Name = "conversorToolStripMenuItem";
+            conversorToolStripMenuItem.Size = new Size(73, 20);
+            conversorToolStripMenuItem.Text = "Conversor";
+            // 
+            // celsiusToolStripMenuItem
+            // 
+            celsiusToolStripMenuItem.Name = "celsiusToolStripMenuItem";
+            celsiusToolStripMenuItem.Size = new Size(212, 22);
+            celsiusToolStripMenuItem.Text = "Celsius -> Fahrenheit";
+            celsiusToolStripMenuItem.Click += celsiusToolStripMenuItem_Click;
+            // 
+            // centímetrosPolegadasToolStripMenuItem
+            // 
+            centímetrosPolegadasToolStripMenuItem.Name = "centímetrosPolegadasToolStripMenuItem";
+            centímetrosPolegadasToolStripMenuItem.Size = new Size(212, 22);
+            centímetrosPolegadasToolStripMenuItem.Text = "Centímetros -> Polegadas";
+            // 
+            // FmrCalculadora
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(509, 661);
+            ClientSize = new Size(509, 681);
             Controls.Add(btn0);
             Controls.Add(btnIgual);
             Controls.Add(btn3);
@@ -251,11 +285,15 @@
             Controls.Add(btnSubtracao);
             Controls.Add(btnSoma);
             Controls.Add(txtVisor);
+            Controls.Add(menuStrip1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            MainMenuStrip = menuStrip1;
             Margin = new Padding(3, 4, 3, 4);
-            Name = "FmrMenu";
-            Text = "FmrMenu";
+            Name = "FmrCalculadora";
+            Text = "Calculadora";
             Load += FmrMenu_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -280,5 +318,9 @@
         private Button btn1;
         private Button btn3;
         private Button btn0;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem conversorToolStripMenuItem;
+        private ToolStripMenuItem celsiusToolStripMenuItem;
+        private ToolStripMenuItem centímetrosPolegadasToolStripMenuItem;
     }
 }

@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class FmrMenu : Form
+    public partial class FmrCalculadora : Form
     {
         float valor1;
         string operacao = "";
-        public FmrMenu()
+        public FmrCalculadora()
         {
             InitializeComponent();
         }
@@ -127,6 +127,11 @@ namespace Calculadora
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtVisor.Text = "";
+        }
+
+        private void celsiusToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
